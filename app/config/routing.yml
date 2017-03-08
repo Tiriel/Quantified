@@ -1,3 +1,7 @@
 agregator:
     resource: "@AgregatorBundle/Resources/config/routing.yml"
     prefix:   /
+
+google:
+    resource: "@GoogleBundle/Resources/config/routing.yml"
+    prefix:   /google
