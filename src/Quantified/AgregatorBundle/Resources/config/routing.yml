@@ -1,0 +1,3 @@
+agregator_homepage:
+    path:     /
+    defaults: { _controller: AgregatorBundle:Default:index }
