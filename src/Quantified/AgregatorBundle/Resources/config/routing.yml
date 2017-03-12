@@ -1,3 +1,3 @@
-agregator_homepage:
+agregator_soonpage:
     path:     /
-    defaults: { _controller: AgregatorBundle:Default:index }
+    defaults: { _controller: AgregatorBundle:Soon:soon }
