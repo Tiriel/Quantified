@@ -1,6 +1,6 @@
 <?php
 
-namespace Quantified\AgregatorBundle\Controller;
+namespace Quantified\AggregatorBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -8,6 +8,6 @@ class SoonController extends Controller
 {
     public function soonAction()
     {
-        return $this->render('AgregatorBundle:Soon:soon.html.twig');
+        return $this->render('AggregatorBundle:Soon:soon.html.twig');
     }
 }

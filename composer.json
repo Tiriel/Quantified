@@ -31,7 +31,9 @@
         "twig/twig": "^1.0||^2.0",
         "asimlqt/php-google-spreadsheet-client": "^3.0",
         "google/apiclient": "^2.1",
-        "hwi/oauth-bundle": "^0.5.3"
+        "hwi/oauth-bundle": "^0.5.3",
+        "coresphere/console-bundle": "^0.5.0",
+        "symfony/assetic-bundle": "^2.8"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",

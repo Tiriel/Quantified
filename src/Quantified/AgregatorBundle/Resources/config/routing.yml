@@ -1,3 +1,0 @@
-agregator_soonpage:
-    path:     /
-    defaults: { _controller: AgregatorBundle:Soon:soon }

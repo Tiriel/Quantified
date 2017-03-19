@@ -1,6 +1,6 @@
 <?php
 
-namespace Quantified\AgregatorBundle\Tests\Controller;
+namespace Quantified\AggregatorBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

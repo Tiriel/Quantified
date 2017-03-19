@@ -4,10 +4,26 @@
         <meta charset="UTF-8" />
         <title>{% block title %}Quantified{% endblock %}</title>
         {% block stylesheets %}
+            {% stylesheets 'assets/css/bulma.min.css' %}
+                <link rel="stylesheet" href="{{ asset_url }}" />
+            {% endstylesheets %}
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
+    {% block header %}
+        <header class="hero is-primary">
+            <div class="hero-body">
+                <div class="container">
+                    {% image 'assets/img/quantified-white.png' %}
+                    <img src="{{ asset_url }}" width="75" class="is-pulled-left"/><br />
+                    <h1 class="title">uantified.</h1>
+                    {% endimage %}
+                    <h2 class="subtitle">Quantified Self aggregation WebApp</h2>
+                </div>
+            </div>
+        </header>
+    {% endblock %}
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
