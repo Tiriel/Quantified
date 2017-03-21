@@ -76,11 +76,11 @@ assetic:
     filters:
         cssrewrite: ~
 
-hwi_oauth:
-    firewall_names: [main]
-    resource_owners:
-        google:
-            type:           google
-            client_id:      %google.client_id%
-            client_secret:  %google.client_secret%
-            scope:          "email profile"
+#hwi_oauth:
+#    firewall_names: [main]
+#    resource_owners:
+#        google:
+#            type:           google
+#            client_id:      %google.client_id%
+#            client_secret:  %google.client_secret%
+#            scope:          "email profile"

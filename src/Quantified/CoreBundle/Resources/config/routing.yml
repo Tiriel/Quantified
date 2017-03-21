@@ -1,3 +1,7 @@
+login:
+    path:     /login
+    defaults: { _controller: CoreBundle:Security:login }
+
 core_homepage:
     path:     /
-    defaults: { _controller: CoreBundle:Default:index }
+    defaults: { _controller: CoreBundle:Default:soon }

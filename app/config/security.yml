@@ -2,6 +2,9 @@
 # http://symfony.com/doc/current/security.html
 security:
 
+    role_hierarchy:
+        ROLE_ADMIN: ROLE_USER
+
     # http://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:
         in_memory:
@@ -25,22 +28,22 @@ security:
         main:
             anonymous: ~
             form_login:
-                login_form:  login
-                login_check: login
+                login_path: login
+                check_path: login
 
-        google:
-            anonymous: ~
-            oauth:
-                resource_owners:
-                    google:             "/login/check-google"
-                login_path:        /login_google
-                use_forward:       false
-                failure_path:      /login_google
-
-                oauth_user_provider:
-                    service: hwi_oauth.user.provider
+#        google:
+#            anonymous: ~
+#            oauth:
+#                resource_owners:
+#                    google:             "/login/check_google"
+#                login_path:        /login_google
+#                use_forward:       false
+#                failure_path:      /login_google
+#
+#                oauth_user_provider:
+#                    service: hwi_oauth.user.provider
 
     access_control:
         - { path: ^/, roles: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/app, roles: ROLE_USER }
+        - { path: ^/app, roles: IS_AUTHENTICATED_FULLY }
