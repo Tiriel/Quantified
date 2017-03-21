@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Quantified\AggregatorBundle\AggregatorBundle(),
             new Quantified\GoogleBundle\GoogleBundle(),
+            new Quantified\CoreBundle\CoreBundle(),
             new \HWI\Bundle\OAuthBundle\HWIOAuthBundle(),
         ];
 
