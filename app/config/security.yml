@@ -5,7 +5,16 @@ security:
     # http://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:
         in_memory:
-            memory: ~
+            memory:
+                users:
+                    devCount:
+                        password: $2y$12$ZifeDAvnMYOa6aDtDOMFPOZ9WbVzRJVE8v2urAqYgiPAN9s1NImB6
+                        roles:    'ROLE_ADMIN'
+
+    encoders:
+        Symfony\Component\Security\Core\User\User:
+            algorithm: bcrypt
+            cost:      12
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
@@ -34,3 +43,8 @@ security:
 
             # form_login: ~
             # http://symfony.com/doc/current/cookbook/security/form_login_setup.html
+
+    access_control:
+        - { path: ^/, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/app, roles: ROLE_USER }
