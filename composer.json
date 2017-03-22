@@ -66,5 +66,8 @@
             "file": "app/config/parameters.yml"
         },
         "branch-alias": null
+    },
+    "platform": {
+        "php": "5.6"
     }
 }
