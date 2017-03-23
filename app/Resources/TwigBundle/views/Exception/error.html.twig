@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Erreur : {{ status_text }} - {{ parent() }}{% endblock %}
+
+{% block body %}
+    <div class="tile is-ancestor">
+        <div class="tile is-parent is-4">
+            <div class="tile is-child box notification is-primary">
+                <h1 class="title">Oops! Il y a eu une erreur!</h1>
+                <h2 class="subtitle">Le serveur a retourné "{{ status_code }} {{ status_text }}".</h2>
+            </div>
+        </div>
+        <div class="tile is-parent is-8">
+            <div class="tile is-child  box">
+                <div>
+                    Quelque chose s'est mal passé.
+                    Envoyez-nous un courriel à contact[at]quantified.fr avec la date et l'heure à laquelle vous avez constaté l'erreur, et nous la corrigerons dès que possible.
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

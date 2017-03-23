@@ -13,7 +13,8 @@ install:
   - php bin/console assets:install
 
 deploy:
-  - skip_cleanup: true
-
-after_success:
-  - ./deploy.sh
+  provider: script
+  script: ./deploy.sh
+  skip_cleanup: true
+  on:
+    branch: master
