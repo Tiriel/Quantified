@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Authentification nécessaire - {{ parent() }}{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <br/>
+        <div class="notification">
+            <div class="tile is-ancestor">
+                <div class="tile is-parent is-half">
+                    <div class="tile is-child box notification is-primary">
+                        <h1 class="title">Qui pénètre en mon domaine?</h1>
+                        <h2 class="subtitle">Le serveur a retourné "{{ status_code }} {{ status_text }}".</h2>
+                    </div>
+                </div>
+                <div class="tile is-parent is-half">
+                    <div class="tile is-child  box">
+                        <div>
+                            La page demandée nécessite une authentification. Pour aller plus loin, vous devez <a href="{{ path('login') }}">vous connecter</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

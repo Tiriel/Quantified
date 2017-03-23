@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Interdit - {{ parent() }}{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <br/>
+        <div class="notification">
+            <div class="tile is-ancestor">
+                <div class="tile is-parent is-half">
+                    <div class="tile is-child box notification is-primary">
+                        <h1 class="title">Vous ne passerez pas!</h1>
+                        <h2 class="subtitle">Le serveur a retourné "{{ status_code }} {{ status_text }}".</h2>
+                    </div>
+                </div>
+                <div class="tile is-parent is-half">
+                    <div class="tile is-child  box">
+                        <div>
+                            La page demandée nécessite des droits que vous ne possédez pas. Vous pouvez par contre <a href="{{ path('core_homepage') }}">retourner à l'accueil</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

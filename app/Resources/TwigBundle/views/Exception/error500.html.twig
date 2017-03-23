@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Oups - {{ parent() }}{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <br/>
+        <div class="notification">
+            <div class="tile is-ancestor">
+                <div class="tile is-parent is-half">
+                    <div class="tile is-child box notification is-primary">
+                        <h1 class="title">... *silence gêné*</h1>
+                        <h2 class="subtitle">Le serveur a retourné "{{ status_code }} {{ status_text }}".</h2>
+                    </div>
+                </div>
+                <div class="tile is-parent is-half">
+                    <div class="tile is-child  box">
+                        <div>
+                            Quelque chose à mal tourné. Envoyez-nous un email à "contact[@]quantified.fr" ou <a href="{{ path('core_homepage') }}">retournez à l'accueil</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
