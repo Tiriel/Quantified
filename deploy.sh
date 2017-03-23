@@ -14,6 +14,8 @@ else
 		then
 	 		echo "Uploading $f"
 	 		curl --ftp-create-dirs -T $f -u $FTP_USER:$FTP_PASS $FTP_HOST$f
+        else
+            echo "File $f ignored"
 		fi
 	done
 fi
