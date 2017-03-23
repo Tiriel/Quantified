@@ -11,6 +11,7 @@ install:
   - composer install
   - composer update
   - php bin/console assets:install
+  - php bin/console cache:clear -e prod
 
 deploy:
   provider: script
