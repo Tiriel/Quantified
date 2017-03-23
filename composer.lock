@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ec1aaab2cede5fdd43acfb9a1f4f3b4a",
-    "content-hash": "21ab4f3f02a1b7c65b38682791be7b4e",
+    "hash": "6e625f924b70c1d69780c2ede64bf556",
+    "content-hash": "34dfeeee3a8995824e43990459646d3f",
     "packages": [
         {
             "name": "asimlqt/php-google-spreadsheet-client",
@@ -879,6 +879,55 @@
             "time": "2016-12-18 15:42:34"
         },
         {
+            "name": "elephantly/kahlan-bundle",
+            "version": "v0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elephantly/kahlan-bundle.git",
+                "reference": "5d382c998f4852057e3973a7a32d1eb82a52584a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elephantly/kahlan-bundle/zipball/5d382c998f4852057e3973a7a32d1eb82a52584a",
+                "reference": "5d382c998f4852057e3973a7a32d1eb82a52584a",
+                "shasum": ""
+            },
+            "require": {
+                "kahlan/kahlan": "~3.1",
+                "kriswallsmith/buzz": "^0.15",
+                "php": ">=5.4",
+                "symfony/symfony": ">=2.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Elephantly\\KahlanBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tiriel"
+                }
+            ],
+            "description": "Symfony bundle for Kahlan Test Framework integration",
+            "keywords": [
+                "BDD",
+                "Behavior-Driven Development",
+                "Monkey Patching",
+                "TDD",
+                "mock",
+                "stub",
+                "symfony",
+                "testing",
+                "unit test"
+            ],
+            "time": "2017-03-23 08:52:33"
+        },
+        {
             "name": "firebase/php-jwt",
             "version": "v4.0.0",
             "source": {
@@ -1490,6 +1539,60 @@
                 "sql"
             ],
             "time": "2014-01-12 16:20:24"
+        },
+        {
+            "name": "kahlan/kahlan",
+            "version": "3.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kahlan/kahlan.git",
+                "reference": "9c4a3652c3c38f7c36e2b2ecfd35b9df0ce29d0c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kahlan/kahlan/zipball/9c4a3652c3c38f7c36e2b2ecfd35b9df0ce29d0c",
+                "reference": "9c4a3652c3c38f7c36e2b2ecfd35b9df0ce29d0c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "bin": [
+                "bin/kahlan"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kahlan\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "CrysaLEAD"
+                }
+            ],
+            "description": "The PHP Test Framework for Freedom, Truth and Justice.",
+            "keywords": [
+                "BDD",
+                "Behavior-Driven Development",
+                "Monkey Patching",
+                "TDD",
+                "mock",
+                "stub",
+                "testing",
+                "unit test"
+            ],
+            "time": "2017-03-23 14:56:57"
         },
         {
             "name": "kriswallsmith/assetic",
