@@ -14,13 +14,21 @@
     {% block header %}
         <header class="hero is-primary">
             <div class="hero-body">
-                <div class="container">
-                    {% image 'assets/img/quantified-white.png' %}
-                    <img src="{{ asset_url }}" width="75" class="is-pulled-left"/><br />
-                    <h1 class="title">uantified.</h1>
-                    {% endimage %}
-                    <h2 class="subtitle">Quantified Self aggregation WebApp</h2>
-                </div>
+                <a href="{{ path('core_homepage') }}">
+                    <div class="container">
+                        {% image 'assets/img/quantified-white.png' %}
+                        <img src="{{ asset_url }}" width="75" class="is-pulled-left"/><br />
+                        <h1 class="title">uantified.</h1>
+                        {% endimage %}
+                        <h2 class="subtitle">Quantified Self aggregation WebApp</h2>
+                    </div>
+                </a>
+                <nav class="nav">
+                    <div class="nav-right nav-menu">
+                        <a class="nav-item" href="{{ path('core_homepage') }}">Accueil</a>
+                        <a class="nav-item" href="{{ path('login') }}">Connexion</a>
+                    </div>
+                </nav>
             </div>
         </header>
     {% endblock %}
