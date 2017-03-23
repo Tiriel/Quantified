@@ -13,6 +13,9 @@
     <body>
     {% block header %}
         <header class="hero is-primary">
+            <div class="hero-head">
+                <div>&nbsp;</div>
+            </div>
             <div class="hero-body">
                 <a href="{{ path('core_homepage') }}">
                     <div class="container">
@@ -23,6 +26,8 @@
                         <h2 class="subtitle">Quantified Self aggregation WebApp</h2>
                     </div>
                 </a>
+            </div>
+            <div class="hero-foot">
                 <nav class="nav">
                     <div class="nav-right nav-menu">
                         <a class="nav-item" href="{{ path('core_homepage') }}">Accueil</a>
