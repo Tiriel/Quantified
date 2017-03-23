@@ -12,5 +12,8 @@ install:
   - composer update
   - php bin/console assets:install
 
+deploy:
+  - skip_cleanup: true
+
 after_success:
   - ./deploy.sh
