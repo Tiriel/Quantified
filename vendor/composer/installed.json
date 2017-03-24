@@ -3191,17 +3191,17 @@
     },
     {
         "name": "elephantly/kahlan-bundle",
-        "version": "v0.9.2",
-        "version_normalized": "0.9.2.0",
+        "version": "v0.9.3",
+        "version_normalized": "0.9.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/elephantly/kahlan-bundle.git",
-            "reference": "64a27fd09907935e520bf5edbf2efe3dbdf56e4f"
+            "reference": "7b9f62d11ebcbba39063f025d6b269d396b7bd40"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/elephantly/kahlan-bundle/zipball/64a27fd09907935e520bf5edbf2efe3dbdf56e4f",
-            "reference": "64a27fd09907935e520bf5edbf2efe3dbdf56e4f",
+            "url": "https://api.github.com/repos/elephantly/kahlan-bundle/zipball/7b9f62d11ebcbba39063f025d6b269d396b7bd40",
+            "reference": "7b9f62d11ebcbba39063f025d6b269d396b7bd40",
             "shasum": ""
         },
         "require": {
@@ -3210,7 +3210,7 @@
             "php": ">=5.4",
             "symfony/symfony": ">=2.7"
         },
-        "time": "2017-03-24 15:13:18",
+        "time": "2017-03-24 16:19:30",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
