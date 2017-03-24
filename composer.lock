@@ -880,16 +880,16 @@
         },
         {
             "name": "elephantly/kahlan-bundle",
-            "version": "v0.9.5",
+            "version": "v0.9.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/elephantly/kahlan-bundle.git",
-                "reference": "ad2832d19e69f88e74cbb98cd42537a38454f63b"
+                "reference": "0306f93e3fd5b5a6fe4a0379157ae973e1204029"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/elephantly/kahlan-bundle/zipball/ad2832d19e69f88e74cbb98cd42537a38454f63b",
-                "reference": "ad2832d19e69f88e74cbb98cd42537a38454f63b",
+                "url": "https://api.github.com/repos/elephantly/kahlan-bundle/zipball/0306f93e3fd5b5a6fe4a0379157ae973e1204029",
+                "reference": "0306f93e3fd5b5a6fe4a0379157ae973e1204029",
                 "shasum": ""
             },
             "require": {
@@ -925,7 +925,7 @@
                 "testing",
                 "unit test"
             ],
-            "time": "2017-03-24 21:25:23"
+            "time": "2017-03-24 21:36:16"
         },
         {
             "name": "firebase/php-jwt",
