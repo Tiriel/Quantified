@@ -19,7 +19,7 @@ class AppKernel extends Kernel
             new Quantified\AggregatorBundle\AggregatorBundle(),
             new Quantified\GoogleBundle\GoogleBundle(),
             new Quantified\CoreBundle\CoreBundle(),
-//            new \HWI\Bundle\OAuthBundle\HWIOAuthBundle(),
+            new Elephantly\KahlanBundle\KahlanBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
