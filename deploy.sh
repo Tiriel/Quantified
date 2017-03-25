@@ -1,9 +1,16 @@
 #!/usr/bin/env bash
 
 lastCommit=$(git log --format="%H" -n 1)
+lastCommitName=$(git log --format="%s" -n 1)
 echo "Commit : $lastCommit"
 
-filesChanged=$(git diff-tree --no-commit-id --name-only -r $lastCommit)
+if [[ "$lastCommitName" =~ "^.*new branch.*" ]]
+then
+    filesChanged=$(git ls-tree --full-tree -r --name-only HEAD)
+else
+    filesChanged=$(git diff-tree --no-commit-id --name-only -r $lastCommit)
+fi
+
 if [ ${#filesChanged[@]} -eq 0 ]; then
     echo "No files to update"
 else
