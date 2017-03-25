@@ -19,7 +19,9 @@ deploy:
   skip_cleanup: true
   on:
     branch: master
-    condition: $FTP_FOLDER = quantified
+    env:
+      FTP_FOLDER=quantified
   on:
     branch: /^feature\/.*/
-    condition: $FTP_FOLDER = testing
+    env:
+      FTP_FOLDER=testing
