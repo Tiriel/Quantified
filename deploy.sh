@@ -13,7 +13,7 @@ else
 		if [ "$f" != ".travis.yml" ] && [ "$f" != "deploy.sh" ] && [ "$f" != ".gitignore" ]
 		then
 	 		echo "Uploading $f"
-	 		curl --ftp-create-dirs -T $f -u $FTP_USER:$FTP_PASS $FTP_HOST$f
+	 		curl --ftp-create-dirs -T $f -u $FTP_USER:$FTP_PASS $FTP_HOST/$FTP_FOLDER/$f
         else
             echo "File $f ignored"
 		fi
