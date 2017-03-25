@@ -19,9 +19,6 @@ deploy:
   skip_cleanup: true
   on:
     branch: master
-    env:
-      FTP_FOLDER=quantified
-  on:
-    branch: /^feature\/.*/
-    env:
-      FTP_FOLDER=testing
+
+env:
+  FTP_FOLDER=quantified
