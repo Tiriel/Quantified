@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+folder=$0
+
 lastCommit=$(git log --format="%H" -n 1)
 lastCommitName=$(git log --format="%s" -n 1)
 echo "Commit : $lastCommit"
@@ -20,7 +22,7 @@ else
 		if [ "$f" != ".travis.yml" ] && [ "$f" != "deploy.sh" ] && [ "$f" != ".gitignore" ]
 		then
 	 		echo "Uploading $f"
-	 		curl --ftp-create-dirs -T $f -u $FTP_USER:$FTP_PASS $FTP_HOST/$FTP_FOLDER/$f
+	 		curl --ftp-create-dirs -T $f -u $FTP_USER:$FTP_PASS $FTP_HOST/$folder/$f
         else
             echo "File $f ignored"
 		fi

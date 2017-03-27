@@ -10,9 +10,14 @@ install:
   - php bin/console cache:clear -e prod
 
 deploy:
-  provider: script
-  script: ./deploy.sh
-  skip_cleanup: true
+  - provider: script
+    script: ./deploy.sh quantified
+    skip_cleanup: true
+    on:
+      branch: master
 
-env:
-  FTP_FOLDER=quantified
+  - provider: script
+    script: ./deploy.sh testing
+    skip_cleanup: true
+    on:
+      branch: /^feature.*/
