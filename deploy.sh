@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-folder=$0
+folder=$1
 
 lastCommit=$(git log --format="%H" -n 1)
 lastCommitName=$(git log --format="%s" -n 1)

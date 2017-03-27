@@ -20,4 +20,4 @@ deploy:
     script: ./deploy.sh testing
     skip_cleanup: true
     on:
-      branch: /^feature.*/
+      branch: /^(?!master$).*$/
