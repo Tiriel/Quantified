@@ -21,3 +21,9 @@ deploy:
     skip_cleanup: true
     on:
       branch: testing
+
+  - provider: script
+    script: ./deploy.sh staging
+    skip_cleanup: true
+    on:
+      branch: staging

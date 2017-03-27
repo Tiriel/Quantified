@@ -3,10 +3,10 @@
 folder=$1
 
 lastCommit=$(git log --format="%H" -n 1)
-lastCommitName=$(git log --format="%s" -n 1)
+lastCommitName=$(git log --format="%s" -n 2)
 echo "Commit : $lastCommit"
 
-if [[ "$lastCommitName" =~ "^.*new branch.*" ]]
+if [[ $lastCommitName == *"into testing"*"new branch" ]]
 then
     filesChanged=$(git ls-tree --full-tree -r --name-only HEAD)
 else
